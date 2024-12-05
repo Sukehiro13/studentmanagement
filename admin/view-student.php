@@ -17,18 +17,18 @@
       <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
       <meta name="author" content="CodedThemes">
       <!-- Favicon icon -->
-      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
       <!-- Google font-->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
       <!-- Required Fremwork -->
-      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap/css/bootstrap.min.css">
       <!-- themify-icons line icon -->
-      <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+      <link rel="stylesheet" type="text/css" href="../assets/icon/themify-icons/themify-icons.css">
       <!-- ico font -->
-      <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+      <link rel="stylesheet" type="text/css" href="../ssets/icon/icofont/css/icofont.css">
       <!-- Style.css -->
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+      <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="../assets/css/jquery.mCustomScrollbar.css">
   </head>
 
   <body>
@@ -85,8 +85,8 @@
                         <a class="mobile-search morphsearch-search" href="#">
                             <i class="ti-search"></i>
                         </a>
-                        <a href="index.html">
-                            <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
+                        <a href="index.php">
+                            <img class="img-fluid" src="../assets/images/logo.png" alt="Theme-Logo" />
                         </a>
                         <a class="mobile-options">
                             <i class="ti-more"></i>
@@ -118,7 +118,7 @@
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">John Doe</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -128,7 +128,7 @@
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-3.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Joseph William</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -138,7 +138,7 @@
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Sara Soudein</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -150,7 +150,7 @@
                             </li>
                             <li class="user-profile header-notification">
                                 <a href="#!">
-                                    <img src="assets/images/image.png" class="img-radius" alt="User-Profile-Image">
+                                    <img src="../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
                                     <span>Cyrus Reyes</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
@@ -193,7 +193,7 @@
                         <div class="pcoded-inner-navbar main-menu">
                             <div class="">
                                 <div class="main-menu-header">
-                                    <img class="img-80 img-radius" src="assets/images/image.png" alt="User-Profile-Image">
+                                    <img class="img-80 img-radius" src="../assets/images/image.png" alt="User-Profile-Image">
                                     <div class="user-details">
                                         <span>Cyrus Reyes</span>
                                         <span id="more-details">Computer Science Student<i class="ti-angle-down"></i></span>
@@ -310,7 +310,69 @@
                                 <div class="page-wrapper">
 
                                     <div class="page-body">
-                                        <h1>CHILL GUY</h1>
+                                    <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">List of Students</div>
+              <div class="card-category">Here is the list of Students.</div>
+            </div>
+            <br />
+                <div class="col-md-12 row">
+                <div class="col-md-6">
+                  <form class="navbar-left navbar-form nav-search mr-md-3" action="{% url 'organization-list'%}">
+                    <div class="input-group">
+                      <input type="text" placeholder="Search" class="form-control" name="q" />
+                        <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="la la-search search-icon"></i>
+                        </span>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="pull-right">
+                    <a href="{% url 'organization-add' %}" class="btn btn-success btn-rounded">Add Student</a>
+                    </div>
+                </div>
+                </div>
+            <div class="card-body">
+              <table class="table table-striped mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col">Student ID</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">CONTACT NUMBER</th>
+                    <th scope="col">CORPORATE EMAIL</th>
+                    <th scope="col">YEAR LEVEL</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                
+                <tbody>
+
+                    <tr>
+                      <td>202280208</td>
+                      <td>Reyes, Cyrus Banda</td>
+                      <td>09947604655</td>
+                      <td>202280208@psu.palawan.edu.ph</td> 
+                      <td>3rd Year</td>
+                      <td>
+                        <a href="organization_list/{{ object.id }}" class="btn btn-primary btn-rounded">Edit</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="organization_list/{{ object.id }}/delete" class="btn btn-danger btn-rounded">Delete</a>
+                    </td>
+                    </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
                                     </div>
                                     </div>
 
@@ -375,26 +437,26 @@
 <![endif]-->
 <!-- Warning Section Ends -->
 <!-- Required Jquery -->
-<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/js/popper.js/popper.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap/js/bootstrap.min.js"></script>
 <!-- jquery slimscroll js -->
-<script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="../assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
 <!-- modernizr js -->
-<script type="text/javascript" src="assets/js/modernizr/modernizr.js"></script>
+<script type="text/javascript" src="../assets/js/modernizr/modernizr.js"></script>
 <!-- am chart -->
-<script src="assets/pages/widget/amchart/amcharts.min.js"></script>
-<script src="assets/pages/widget/amchart/serial.min.js"></script>
+<script src="../assets/pages/widget/amchart/amcharts.min.js"></script>
+<script src="../assets/pages/widget/amchart/serial.min.js"></script>
 <!-- Todo js -->
-<script type="text/javascript " src="assets/pages/todo/todo.js "></script>
+<script type="text/javascript " src="../assets/pages/todo/todo.js "></script>
 <!-- Custom js -->
-<script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
-<script type="text/javascript " src="assets/js/SmoothScroll.js"></script>
-<script src="assets/js/pcoded.min.js"></script>
-<script src="assets/js/demo-12.js"></script>
-<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../assets/pages/dashboard/custom-dashboard.js"></script>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<script type="text/javascript " src="../assets/js/SmoothScroll.js"></script>
+<script src="../assets/js/pcoded.min.js"></script>
+<script src="../assets/js/demo-12.js"></script>
+<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
 var $window = $(window);
 var nav = $('.fixed-button');
