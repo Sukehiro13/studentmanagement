@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>GURU Able - Free Lite Admin Template </title>
+    <title>Student Management System</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,7 +17,7 @@
       <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
       <meta name="author" content="CodedThemes">
       <!-- Favicon icon -->
-      <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="../assets/images/psu.png" type="image/x-icon">
       <!-- Google font-->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
       <!-- Required Fremwork -->
@@ -85,9 +85,9 @@
                         <a class="mobile-search morphsearch-search" href="#">
                             <i class="ti-search"></i>
                         </a>
-                        <a href="index.html">
-                            <img class="img-fluid" src="../assets/images/logo.png" alt="Theme-Logo" />
-                        </a>
+                        <a href="https://psu.palawan.edu.ph/">
+                            <img class="img-80 img-radius" class="img-fluid" src="../assets/images/psu.png" alt="Theme-Logo" />
+                        </a>    
                         <a class="mobile-options">
                             <i class="ti-more"></i>
                         </a>
