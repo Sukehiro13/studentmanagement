@@ -1,3 +1,7 @@
+<?php
+include 'studentedit.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -235,7 +239,7 @@
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="admin/view-student.php">
+                                            <a href="view-student.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Informations</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -309,9 +313,50 @@
                         <div class="pcoded-inner-content">
                             <div class="main-body">
                                 <div class="page-wrapper">
-
                                     <div class="page-body">
-                                   
+                                    <form action="studentadd.php" method="POST" class="user">
+                                <div class="form-group row">
+                                    <div class="col-sm-4 mb-3">
+                                        <input type="text" class="form-control form-control-user" id="studentID" name="studentID"
+                                            value="<?php echo isset($row['studentID']) ? htmlspecialchars($row['studentID']): ''; ?>">
+                                    </div>
+                                    <div class="col-sm-4 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="firstName" name="firstName"
+                                        value="<?php echo isset($row['firstName']) ? htmlspecialchars($row['firstName']): ''; ?>">
+                                    </div>
+                                    <div class="col-sm-4 mb-3">
+                                        <input type="text" class="form-control form-control-user" id="middleName" name="middleName"
+                                         value="<?php echo isset($row['middleName']) ? htmlspecialchars($row['middleName']): ''; ?>">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control form-control-user" id="lastName" name="lastName"
+                                        value="<?php echo isset($row['lastName']) ? htmlspecialchars($row['lastName']): ''; ?>">
+                                    </div>
+                                    <div class="col-sm-4 mb-3">Date of Birth:
+                                        <input type="date" class="form-control form-control-user" id="dateofbirth" name="dateofbirth"
+                                        value="<?php echo isset($row['dateofbirth']) ? htmlspecialchars($row['dateofbirth']): ''; ?>">
+                                    </div>
+                                    <div class="col-sm-4 mb-3">
+                                        <input type="text" class="form-control form-control-user" id="address" name="address"
+                                        value="<?php echo isset($row['address']) ? htmlspecialchars($row['address']): ''; ?>">
+                                    </div>
+                                    <div class="col-sm-4 mb-3">
+                                        <input type="text" class="form-control form-control-user" id="contactNo" name="contactNo"
+                                        value="<?php echo isset($row['contactNo']) ? htmlspecialchars($row['contactNo']): ''; ?>">
+                                    </div>
+                                    <div class="col-sm-4 mb-3">
+                                        <input type="email" class="form-control form-control-user" id="email" name="email"
+                                        value="<?php echo isset($row['email']) ? htmlspecialchars($row['email']): ''; ?>">
+                                    </div>
+                                    <div class="col-sm-4 mb-3">Enrollment Year:
+                                        <input type="date" class="form-control form-control-user" id="enrollmentYear" name="enrollmentYear"
+                                        value="<?php echo isset($row['enrollmentYear']) ? htmlspecialchars($row['enrollmentYear']): ''; ?>">
+                                    </div>
+                                </div>
+                                <div class="pull-left">
+                                    <button type="submit" class="btn btn-success">Update Student</button>
+                                </div>
+                            </form>
                                     </div>
                                     </div>
 

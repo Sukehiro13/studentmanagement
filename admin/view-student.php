@@ -151,7 +151,7 @@
                             <li class="user-profile header-notification">
                                 <a href="#!">
                                     <img src="../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
-                                    <span>Cyrus Reyes</span>
+                                    <span>Gil Patrick Ayasib</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
@@ -195,7 +195,7 @@
                                 <div class="main-menu-header">
                                     <img class="img-80 img-radius" src="../assets/images/image.png" alt="User-Profile-Image">
                                     <div class="user-details">
-                                        <span>Cyrus Reyes</span>
+                                        <span>Gil Patrick Ayasib</span>
                                         <span id="more-details">Computer Science Student<i class="ti-angle-down"></i></span>
                                     </div>
                                 </div>
@@ -334,7 +334,7 @@
                 
                 <div class="col-md-6">
                     <div class="pull-right">
-                    <a href="{% url 'organization-add' %}" class="btn btn-success btn-rounded">Add Student</a>
+                    <a href="student-add.php" class="btn btn-success btn-rounded">Add Student</a>
                     </div>
                 </div>
                 </div>
@@ -346,27 +346,14 @@
                     <th scope="col">NAME</th>
                     <th scope="col">CONTACT NUMBER</th>
                     <th scope="col">CORPORATE EMAIL</th>
-                    <th scope="col">YEAR LEVEL</th>
                     <th scope="col">ACTION</th>
                   </tr>
                 </thead>
                 
                 <tbody>
-
-                    <tr>
-                      <td>202280208</td>
-                      <td>Reyes, Cyrus Banda</td>
-                      <td>09947604655</td>
-                      <td>202280208@psu.palawan.edu.ph</td> 
-                      <td>3rd Year</td>
-                      <td>
-                        <a href="organization_list/{{ object.id }}" class="btn btn-primary btn-rounded">Edit</a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a href="organization_list/{{ object.id }}/delete" class="btn btn-danger btn-rounded">Delete</a>
-                    </td>
-                    </tr>
-
-
+                    <?php 
+                    include 'viewstudent.php';
+                    ?>
                 </tbody>
               </table>
             </div>
