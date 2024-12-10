@@ -314,7 +314,7 @@ include 'studentedit.php';
                             <div class="main-body">
                                 <div class="page-wrapper">
                                     <div class="page-body">
-                                    <form action="studentadd.php" method="POST" class="user">
+                                    <form action="studentedit.php" method="POST" class="user">
                                 <div class="form-group row">
                                     <div class="col-sm-4 mb-3">
                                         <input type="text" class="form-control form-control-user" id="studentID" name="studentID"

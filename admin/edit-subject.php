@@ -1,3 +1,7 @@
+<?php
+include 'studentedit.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +29,7 @@
       <!-- themify-icons line icon -->
       <link rel="stylesheet" type="text/css" href="../assets/icon/themify-icons/themify-icons.css">
       <!-- ico font -->
-      <link rel="stylesheet" type="text/css" href="../ssets/icon/icofont/css/icofont.css">
+      <link rel="stylesheet" type="text/css" href="../assets/icon/icofont/css/icofont.css">
       <!-- Style.css -->
       <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
       <link rel="stylesheet" type="text/css" href="../assets/css/jquery.mCustomScrollbar.css">
@@ -85,9 +89,9 @@
                         <a class="mobile-search morphsearch-search" href="#">
                             <i class="ti-search"></i>
                         </a>
-                        <a href="index.php">
-                            <img class="img-80 img-radius" src="../assets/images/psu.png" alt="User-Profile-Image"></a>
-                        </a>
+                        <a href="https://psu.palawan.edu.ph/">
+                            <img class="img-80 img-radius" class="img-fluid" src="../assets/images/psu.png" alt="Theme-Logo" />
+                        </a>    
                         <a class="mobile-options">
                             <i class="ti-more"></i>
                         </a>
@@ -149,9 +153,9 @@
                                 </ul>
                             </li>
                             <li class="user-profile header-notification">
-                                <a href="#!">
+                                <a href="https://web.facebook.com/patpat.ubay">
                                     <img src="../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
-                                    <span>Gil Patrick Ayasib</span>
+                                    <span>Cyrus Reyes</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
@@ -193,11 +197,12 @@
                         <div class="pcoded-inner-navbar main-menu">
                             <div class="">
                                 <div class="main-menu-header">
-                                    <img class="img-80 img-radius" src="../assets/images/image.png" alt="User-Profile-Image">
-                                    <div class="user-details">
-                                        <span>Gil Patrick Ayasib</span>
-                                        <span id="more-details">Computer Science Student<i class="ti-angle-down"></i></span>
-                                    </div>
+                                <a href="https://web.facebook.com/patpat.ubay">
+                                    <img class="img-80 img-radius" src="../assets/images/image.png" alt="User-Profile-Image"></a>
+                                        <div class="user-details">
+                                            <span>Gil Patrick Ayasib</span>
+                                            <span id="more-details">Computer Science Student<i class="ti-angle-down"></i></span>
+                                        </div>
                                 </div>
 
                                 <div class="main-menu-content">
@@ -234,23 +239,16 @@
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="admin/view-student.php">
+                                            <a href="view-student.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Informations</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a href="admin/view-subject.php">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Subjects</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
                                             <a href="view-grade.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Student Grades</span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">View Student Grades</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
@@ -315,58 +313,27 @@
                         <div class="pcoded-inner-content">
                             <div class="main-body">
                                 <div class="page-wrapper">
-
                                     <div class="page-body">
-                                    <div class="row">
-        <div class="col-md-12">
-          <div class="card">
-            <div class="card-header">
-              <div class="card-title">List of Students</div>
-              <div class="card-category">Here is the list of Students.</div>
-            </div>
-            <br />
-                <div class="col-md-12 row">
-                <div class="col-md-6">
-                  <form class="navbar-left navbar-form nav-search mr-md-3" action="{% url 'organization-list'%}">
-                    <div class="input-group">
-                      <input type="text" placeholder="Search" class="form-control" name="q" />
-                        <div class="input-group-append">
-                        <span class="input-group-text">
-                            <i class="la la-search search-icon"></i>
-                        </span>
-                        </div>
-                    </div>
-                    </form>
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="pull-right">
-                    <a href="student-add.php" class="btn btn-success btn-rounded">Add Student</a>
-                    </div>
-                </div>
-                </div>
-            <div class="card-body">
-              <table class="table table-striped mt-3">
-                <thead>
-                  <tr>
-                    <th scope="col">STUDENT ID</th>
-                    <th scope="col">NAME</th>
-                    <th scope="col">CONTACT NUMBER</th>
-                    <th scope="col">CORPORATE EMAIL</th>
-                    <th scope="col">ACTION</th>
-                  </tr>
-                </thead>
-                
-                <tbody>
-                    <?php 
-                    include 'viewstudent.php';
-                    ?>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+                                    <form action="editsubject.php" method="POST" class="user">
+                                    <div class="form-group row">
+                                    <div class="col-sm-6 mb-3">
+                                    <input type="hidden" name="subjectID" value="<?php echo isset($row['subjectID']) ? $row['subjectID'] : ''; ?>">
+                                        <input type="text" class="form-control form-control-user" name="subjectID"
+                                        value="<?php echo isset($row['subjectID']) ? htmlspecialchars($row['subjectID']) : ''; ?>"placeholder="Subject ID">
+                                    </div>
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" name="subjectName"
+                                        value="<?php echo isset($row['subjectName']) ? htmlspecialchars($row['subjectName']) : ''; ?>"placeholder="Subject Name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text"class="form-control" name="subjectDescription"
+                                        value="<?php echo isset($row['subjectDescription']) ? htmlspecialchars($row['subjectDescription']) : ''; ?>"placeholder="Subject Description">
+                                    </div>
+                                </div>
+                                <div class="pull-left">
+                                    <button type="submit" class="btn btn-success">Update Subject</button>
+                                </div>
+                            </form>
                                     </div>
                                     </div>
 

@@ -321,8 +321,8 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <div class="card-title">List of Students</div>
-              <div class="card-category">Here is the list of Students.</div>
+              <div class="card-title">List of Subjects</div>
+              <div class="card-category">Here is the subjects.</div>
             </div>
             <br />
                 <div class="col-md-12 row">
@@ -341,7 +341,7 @@
                 
                 <div class="col-md-6">
                     <div class="pull-right">
-                    <a href="student-add.php" class="btn btn-success btn-rounded">Add Student</a>
+                    <a href="add-subject.php" class="btn btn-success btn-rounded">Add Subjects</a>
                     </div>
                 </div>
                 </div>
@@ -349,17 +349,16 @@
               <table class="table table-striped mt-3">
                 <thead>
                   <tr>
-                    <th scope="col">STUDENT ID</th>
-                    <th scope="col">NAME</th>
-                    <th scope="col">CONTACT NUMBER</th>
-                    <th scope="col">CORPORATE EMAIL</th>
+                    <th scope="col">Subject ID</th>
+                    <th scope="col">Subject Name</th>
+                    <th scope="col">Subject Description</th>
                     <th scope="col">ACTION</th>
                   </tr>
                 </thead>
                 
                 <tbody>
                     <?php 
-                    include 'viewstudent.php';
+                    include 'viewsubject.php';
                     ?>
                 </tbody>
               </table>

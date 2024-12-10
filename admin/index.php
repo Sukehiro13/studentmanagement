@@ -242,9 +242,16 @@
                                             </a>
                                         </li>
                                         <li class=" ">
+                                            <a href="admin/view-subject.php">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Subjects</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
                                             <a href="view-grade.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">View Student Grades</span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Student Grades</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
