@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -249,7 +252,7 @@
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a href="view-grade.php">
+                                            <a href="grade/view-grade.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Student Grades</span>
                                                 <span class="pcoded-mcaret"></span>
