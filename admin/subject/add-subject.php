@@ -1,7 +1,3 @@
-<?php
-include 'studentedit.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,18 +17,18 @@ include 'studentedit.php';
       <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
       <meta name="author" content="CodedThemes">
       <!-- Favicon icon -->
-      <link rel="icon" href="../assets/images/psu.png" type="image/x-icon">
+      <link rel="icon" href="../../assets/images/psu.png" type="image/x-icon">
       <!-- Google font-->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
       <!-- Required Fremwork -->
-      <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap/css/bootstrap.min.css">
       <!-- themify-icons line icon -->
-      <link rel="stylesheet" type="text/css" href="../assets/icon/themify-icons/themify-icons.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/icon/themify-icons/themify-icons.css">
       <!-- ico font -->
-      <link rel="stylesheet" type="text/css" href="../assets/icon/icofont/css/icofont.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/icon/icofont/css/icofont.css">
       <!-- Style.css -->
-      <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-      <link rel="stylesheet" type="text/css" href="../assets/css/jquery.mCustomScrollbar.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/jquery.mCustomScrollbar.css">
   </head>
 
   <body>
@@ -90,7 +86,7 @@ include 'studentedit.php';
                             <i class="ti-search"></i>
                         </a>
                         <a href="https://psu.palawan.edu.ph/">
-                            <img class="img-80 img-radius" class="img-fluid" src="../assets/images/psu.png" alt="Theme-Logo" />
+                            <img class="img-80 img-radius" class="img-fluid" src="../../assets/images/psu.png" alt="Theme-Logo" />
                         </a>    
                         <a class="mobile-options">
                             <i class="ti-more"></i>
@@ -122,7 +118,7 @@ include 'studentedit.php';
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">John Doe</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -132,7 +128,7 @@ include 'studentedit.php';
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../../assets/images/avatar-3.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Joseph William</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -142,7 +138,7 @@ include 'studentedit.php';
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Sara Soudein</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -154,7 +150,7 @@ include 'studentedit.php';
                             </li>
                             <li class="user-profile header-notification">
                                 <a href="https://web.facebook.com/patpat.ubay">
-                                    <img src="../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
+                                    <img src="../../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
                                     <span>Cyrus Reyes</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
@@ -198,7 +194,7 @@ include 'studentedit.php';
                             <div class="">
                                 <div class="main-menu-header">
                                 <a href="https://web.facebook.com/patpat.ubay">
-                                    <img class="img-80 img-radius" src="../assets/images/image.png" alt="User-Profile-Image"></a>
+                                    <img class="img-80 img-radius" src="../../assets/images/image.png" alt="User-Profile-Image"></a>
                                         <div class="user-details">
                                             <span>Gil Patrick Ayasib</span>
                                             <span id="more-details">Computer Science Student<i class="ti-angle-down"></i></span>
@@ -225,7 +221,7 @@ include 'studentedit.php';
                             <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Main</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="active">
-                                    <a href="index.html">
+                                    <a href="main-admin.php">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
@@ -239,7 +235,7 @@ include 'studentedit.php';
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="view-student.php">
+                                            <a href="../student/view-student.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Informations</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -314,47 +310,23 @@ include 'studentedit.php';
                             <div class="main-body">
                                 <div class="page-wrapper">
                                     <div class="page-body">
-                                    <form action="studentedit.php" method="POST" class="user">
+                                    <form action="addsubject.php" method="POST" class="user">
                                 <div class="form-group row">
                                     <div class="col-sm-4 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="studentID" name="studentID"
-                                            value="<?php echo isset($row['studentID']) ? htmlspecialchars($row['studentID']): ''; ?>">
+                                        <input type="text" class="form-control form-control-user" id="subjectID" name="subjectID"
+                                            placeholder="Subject ID" required>
                                     </div>
                                     <div class="col-sm-4 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="firstName" name="firstName"
-                                        value="<?php echo isset($row['firstName']) ? htmlspecialchars($row['firstName']): ''; ?>">
+                                        <input type="text" class="form-control form-control-user" id="subjectName" name="subjectName"
+                                            placeholder="Subject Name" required>
                                     </div>
                                     <div class="col-sm-4 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="middleName" name="middleName"
-                                         value="<?php echo isset($row['middleName']) ? htmlspecialchars($row['middleName']): ''; ?>">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control form-control-user" id="lastName" name="lastName"
-                                        value="<?php echo isset($row['lastName']) ? htmlspecialchars($row['lastName']): ''; ?>">
-                                    </div>
-                                    <div class="col-sm-4 mb-3">Date of Birth:
-                                        <input type="date" class="form-control form-control-user" id="dateofbirth" name="dateofbirth"
-                                        value="<?php echo isset($row['dateofbirth']) ? htmlspecialchars($row['dateofbirth']): ''; ?>">
-                                    </div>
-                                    <div class="col-sm-4 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="address" name="address"
-                                        value="<?php echo isset($row['address']) ? htmlspecialchars($row['address']): ''; ?>">
-                                    </div>
-                                    <div class="col-sm-4 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="contactNo" name="contactNo"
-                                        value="<?php echo isset($row['contactNo']) ? htmlspecialchars($row['contactNo']): ''; ?>">
-                                    </div>
-                                    <div class="col-sm-4 mb-3">
-                                        <input type="email" class="form-control form-control-user" id="email" name="email"
-                                        value="<?php echo isset($row['email']) ? htmlspecialchars($row['email']): ''; ?>">
-                                    </div>
-                                    <div class="col-sm-4 mb-3">Enrollment Year:
-                                        <input type="date" class="form-control form-control-user" id="enrollmentYear" name="enrollmentYear"
-                                        value="<?php echo isset($row['enrollmentYear']) ? htmlspecialchars($row['enrollmentYear']): ''; ?>">
+                                        <input type="text" class="form-control form-control-user" id="subjectDescription" name="subjectDescription"
+                                            placeholder="Subject Descripion">
                                     </div>
                                 </div>
                                 <div class="pull-left">
-                                    <button type="submit" class="btn btn-success">Update Student</button>
+                                    <button type="submit" class="btn btn-success">Add Subject</button>
                                 </div>
                             </form>
                                     </div>
@@ -421,26 +393,26 @@ include 'studentedit.php';
 <![endif]-->
 <!-- Warning Section Ends -->
 <!-- Required Jquery -->
-<script type="text/javascript" src="../assets/js/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="../assets/js/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../assets/js/popper.js/popper.min.js"></script>
-<script type="text/javascript" src="../assets/js/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../assets/js/popper.js/popper.min.js"></script>
+<script type="text/javascript" src="../../assets/js/bootstrap/js/bootstrap.min.js"></script>
 <!-- jquery slimscroll js -->
-<script type="text/javascript" src="../assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
 <!-- modernizr js -->
-<script type="text/javascript" src="../assets/js/modernizr/modernizr.js"></script>
+<script type="text/javascript" src="../../assets/js/modernizr/modernizr.js"></script>
 <!-- am chart -->
-<script src="../assets/pages/widget/amchart/amcharts.min.js"></script>
-<script src="../assets/pages/widget/amchart/serial.min.js"></script>
+<script src="../../assets/pages/widget/amchart/amcharts.min.js"></script>
+<script src="../../assets/pages/widget/amchart/serial.min.js"></script>
 <!-- Todo js -->
-<script type="text/javascript " src="../assets/pages/todo/todo.js "></script>
+<script type="text/javascript " src="../../assets/pages/todo/todo.js "></script>
 <!-- Custom js -->
-<script type="text/javascript" src="../assets/pages/dashboard/custom-dashboard.js"></script>
-<script type="text/javascript" src="../assets/js/script.js"></script>
-<script type="text/javascript " src="../assets/js/SmoothScroll.js"></script>
-<script src="../assets/js/pcoded.min.js"></script>
-<script src="../assets/js/demo-12.js"></script>
-<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../../assets/pages/dashboard/custom-dashboard.js"></script>
+<script type="text/javascript" src="../../assets/js/script.js"></script>
+<script type="text/javascript " src="../../assets/js/SmoothScroll.js"></script>
+<script src="../../assets/js/pcoded.min.js"></script>
+<script src="../../assets/js/demo-12.js"></script>
+<script src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
 var $window = $(window);
 var nav = $('.fixed-button');

@@ -1,3 +1,7 @@
+<?php
+include 'editsubject.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,18 +21,18 @@
       <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
       <meta name="author" content="CodedThemes">
       <!-- Favicon icon -->
-      <link rel="icon" href="../assets/images/psu.png" type="image/x-icon">
+      <link rel="icon" href="../../assets/images/psu.png" type="image/x-icon">
       <!-- Google font-->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
       <!-- Required Fremwork -->
-      <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap/css/bootstrap.min.css">
       <!-- themify-icons line icon -->
-      <link rel="stylesheet" type="text/css" href="../assets/icon/themify-icons/themify-icons.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/icon/themify-icons/themify-icons.css">
       <!-- ico font -->
-      <link rel="stylesheet" type="text/css" href="../assets/icon/icofont/css/icofont.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/icon/icofont/css/icofont.css">
       <!-- Style.css -->
-      <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-      <link rel="stylesheet" type="text/css" href="../assets/css/jquery.mCustomScrollbar.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/jquery.mCustomScrollbar.css">
   </head>
 
   <body>
@@ -86,7 +90,7 @@
                             <i class="ti-search"></i>
                         </a>
                         <a href="https://psu.palawan.edu.ph/">
-                            <img class="img-80 img-radius" class="img-fluid" src="../assets/images/psu.png" alt="Theme-Logo" />
+                            <img class="img-80 img-radius" class="img-fluid" src="../../assets/images/psu.png" alt="Theme-Logo" />
                         </a>    
                         <a class="mobile-options">
                             <i class="ti-more"></i>
@@ -118,7 +122,7 @@
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">John Doe</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -128,7 +132,7 @@
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../../assets/images/avatar-3.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Joseph William</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -138,7 +142,7 @@
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Sara Soudein</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -150,7 +154,7 @@
                             </li>
                             <li class="user-profile header-notification">
                                 <a href="https://web.facebook.com/patpat.ubay">
-                                    <img src="../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
+                                    <img src="../../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
                                     <span>Cyrus Reyes</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
@@ -194,7 +198,7 @@
                             <div class="">
                                 <div class="main-menu-header">
                                 <a href="https://web.facebook.com/patpat.ubay">
-                                    <img class="img-80 img-radius" src="../assets/images/image.png" alt="User-Profile-Image"></a>
+                                    <img class="img-80 img-radius" src="../../assets/images/image.png" alt="User-Profile-Image"></a>
                                         <div class="user-details">
                                             <span>Gil Patrick Ayasib</span>
                                             <span id="more-details">Computer Science Student<i class="ti-angle-down"></i></span>
@@ -221,7 +225,7 @@
                             <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Main</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="active">
-                                    <a href="index.html">
+                                    <a href="main-admin.php">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
@@ -235,7 +239,7 @@
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="view-student.php">
+                                            <a href="../student/view-student.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Informations</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -310,47 +314,24 @@
                             <div class="main-body">
                                 <div class="page-wrapper">
                                     <div class="page-body">
-                                    <form action="studentadd.php" method="POST" class="user">
-                                <div class="form-group row">
-                                    <div class="col-sm-4 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="studentID" name="studentID"
-                                            placeholder="Student ID" required>
+                                    <form action="editsubject.php" method="POST" class="user">
+                                    <div class="form-group row">
+                                    <div class="col-sm-6 mb-3">
+                                    <input type="hidden" name="subjectID" value="<?php echo isset($row['subjectID']) ? $row['subjectID'] : ''; ?>">
+                                        <input type="text" class="form-control form-control-user" name="subjectID"
+                                        value="<?php echo isset($row['subjectID']) ? htmlspecialchars($row['subjectID']) : ''; ?>"placeholder="Subject ID">
                                     </div>
-                                    <div class="col-sm-4 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="firstName" name="firstName"
-                                            placeholder="First Name" required>
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" name="subjectName"
+                                        value="<?php echo isset($row['subjectName']) ? htmlspecialchars($row['subjectName']) : ''; ?>"placeholder="Subject Name">
                                     </div>
-                                    <div class="col-sm-4 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="middleName" name="middleName"
-                                            placeholder="Middle Name">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control form-control-user" id="lastName" name="lastName"
-                                            placeholder="Last Name" required>
-                                    </div>
-                                    <div class="col-sm-4 mb-3">Date of Birth:
-                                        <input type="date" class="form-control form-control-user" id="dateofbirth" name="dateofbirth"
-                                            placeholder="Date of Birth" required>
-                                    </div>
-                                    <div class="col-sm-4 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="address" name="address"
-                                            placeholder="Address" required>
-                                    </div>
-                                    <div class="col-sm-4 mb-3">
-                                        <input type="text" class="form-control form-control-user" id="contactNo" name="contactNo"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                    <div class="col-sm-4 mb-3">
-                                        <input type="email" class="form-control form-control-user" id="email" name="email"
-                                            placeholder="Email" required>
-                                    </div>
-                                    <div class="col-sm-4 mb-3">Enrollment Year:
-                                        <input type="date" class="form-control form-control-user" id="enrollmentYear" name="enrollmentYear"
-                                            placeholder="Enrollment Year" required>
+                                    <div class="col-sm-6">
+                                        <input type="text"class="form-control" name="subjectDescription"
+                                        value="<?php echo isset($row['subjectDescription']) ? htmlspecialchars($row['subjectDescription']) : ''; ?>"placeholder="Subject Description">
                                     </div>
                                 </div>
                                 <div class="pull-left">
-                                    <button type="submit" class="btn btn-success">Add Student</button>
+                                    <button type="submit" class="btn btn-success">Update Subject</button>
                                 </div>
                             </form>
                                     </div>
@@ -417,26 +398,26 @@
 <![endif]-->
 <!-- Warning Section Ends -->
 <!-- Required Jquery -->
-<script type="text/javascript" src="../assets/js/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="../assets/js/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../assets/js/popper.js/popper.min.js"></script>
-<script type="text/javascript" src="../assets/js/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../assets/js/popper.js/popper.min.js"></script>
+<script type="text/javascript" src="../../assets/js/bootstrap/js/bootstrap.min.js"></script>
 <!-- jquery slimscroll js -->
-<script type="text/javascript" src="../assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
 <!-- modernizr js -->
-<script type="text/javascript" src="../assets/js/modernizr/modernizr.js"></script>
+<script type="text/javascript" src="../../assets/js/modernizr/modernizr.js"></script>
 <!-- am chart -->
-<script src="../assets/pages/widget/amchart/amcharts.min.js"></script>
-<script src="../assets/pages/widget/amchart/serial.min.js"></script>
+<script src="../../assets/pages/widget/amchart/amcharts.min.js"></script>
+<script src="../../assets/pages/widget/amchart/serial.min.js"></script>
 <!-- Todo js -->
-<script type="text/javascript " src="../assets/pages/todo/todo.js "></script>
+<script type="text/javascript " src="../../assets/pages/todo/todo.js "></script>
 <!-- Custom js -->
-<script type="text/javascript" src="../assets/pages/dashboard/custom-dashboard.js"></script>
-<script type="text/javascript" src="../assets/js/script.js"></script>
-<script type="text/javascript " src="../assets/js/SmoothScroll.js"></script>
-<script src="../assets/js/pcoded.min.js"></script>
-<script src="../assets/js/demo-12.js"></script>
-<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../../assets/pages/dashboard/custom-dashboard.js"></script>
+<script type="text/javascript" src="../../assets/js/script.js"></script>
+<script type="text/javascript " src="../../assets/js/SmoothScroll.js"></script>
+<script src="../../assets/js/pcoded.min.js"></script>
+<script src="../../assets/js/demo-12.js"></script>
+<script src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
 var $window = $(window);
 var nav = $('.fixed-button');

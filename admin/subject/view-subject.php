@@ -25,7 +25,7 @@
       <!-- themify-icons line icon -->
       <link rel="stylesheet" type="text/css" href="../../assets/icon/themify-icons/themify-icons.css">
       <!-- ico font -->
-      <link rel="stylesheet" type="text/css" href="../../assets/icon/icofont/css/icofont.css">
+      <link rel="stylesheet" type="text/css" href="../ssets/icon/icofont/css/icofont.css">
       <!-- Style.css -->
       <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
       <link rel="stylesheet" type="text/css" href="../../assets/css/jquery.mCustomScrollbar.css">
@@ -85,9 +85,9 @@
                         <a class="mobile-search morphsearch-search" href="#">
                             <i class="ti-search"></i>
                         </a>
-                        <a href="https://psu.palawan.edu.ph/">
-                            <img class="img-80 img-radius" class="img-fluid" src="../../assets/images/psu.png" alt="Theme-Logo" />
-                        </a>    
+                        <a href="main-admin.php">
+                            <img class="img-80 img-radius" src="../../assets/images/psu.png" alt="User-Profile-Image"></a>
+                        </a>
                         <a class="mobile-options">
                             <i class="ti-more"></i>
                         </a>
@@ -149,9 +149,9 @@
                                 </ul>
                             </li>
                             <li class="user-profile header-notification">
-                                <a href="https://web.facebook.com/patpat.ubay">
+                                <a href="#!">
                                     <img src="../../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
-                                    <span>Cyrus Reyes</span>
+                                    <span>Gil Patrick Ayasib</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
@@ -193,12 +193,11 @@
                         <div class="pcoded-inner-navbar main-menu">
                             <div class="">
                                 <div class="main-menu-header">
-                                <a href="https://web.facebook.com/patpat.ubay">
-                                    <img class="img-80 img-radius" src="../../assets/images/image.png" alt="User-Profile-Image"></a>
-                                        <div class="user-details">
-                                            <span>Gil Patrick Ayasib</span>
-                                            <span id="more-details">Computer Science Student<i class="ti-angle-down"></i></span>
-                                        </div>
+                                    <img class="img-80 img-radius" src="../../assets/images/image.png" alt="User-Profile-Image">
+                                    <div class="user-details">
+                                        <span>Gil Patrick Ayasib</span>
+                                        <span id="more-details">Computer Science Student<i class="ti-angle-down"></i></span>
+                                    </div>
                                 </div>
 
                                 <div class="main-menu-content">
@@ -235,14 +234,14 @@
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="student/view-student.php">
+                                            <a href="../student/view-student.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Informations</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a href="subject/view-subject.php">
+                                            <a href="view-subject.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Subjects</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -318,7 +317,55 @@
                                 <div class="page-wrapper">
 
                                     <div class="page-body">
-                                    <h1>Welcome to Admin Dashboard!</h1>
+                                    <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">List of Subjects</div>
+              <div class="card-category">Here is the subjects.</div>
+            </div>
+            <br />
+                <div class="col-md-12 row">
+                <div class="col-md-6">
+                  <form class="navbar-left navbar-form nav-search mr-md-3" action="{% url 'organization-list'%}">
+                    <div class="input-group">
+                      <input type="text" placeholder="Search" class="form-control" name="q" />
+                        <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="la la-search search-icon"></i>
+                        </span>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="pull-right">
+                    <a href="add-subject.php" class="btn btn-success btn-rounded">Add Subjects</a>
+                    </div>
+                </div>
+                </div>
+            <div class="card-body">
+              <table class="table table-striped mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col">Subject ID</th>
+                    <th scope="col">Subject Name</th>
+                    <th scope="col">Subject Description</th>
+                    <th scope="col">ACTION</th>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                    <?php 
+                    include 'viewsubject.php';
+                    ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
                                     </div>
                                     </div>
 
@@ -383,26 +430,26 @@
 <![endif]-->
 <!-- Warning Section Ends -->
 <!-- Required Jquery -->
-<script type="text/javascript" src="../assets/js/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="../assets/js/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../assets/js/popper.js/popper.min.js"></script>
-<script type="text/javascript" src="../assets/js/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../assets/js/popper.js/popper.min.js"></script>
+<script type="text/javascript" src="../../assets/js/bootstrap/js/bootstrap.min.js"></script>
 <!-- jquery slimscroll js -->
-<script type="text/javascript" src="../assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
 <!-- modernizr js -->
 <script type="text/javascript" src="../assets/js/modernizr/modernizr.js"></script>
 <!-- am chart -->
-<script src="../assets/pages/widget/amchart/amcharts.min.js"></script>
-<script src="../assets/pages/widget/amchart/serial.min.js"></script>
+<script src="../../assets/pages/widget/amchart/amcharts.min.js"></script>
+<script src="../../assets/pages/widget/amchart/serial.min.js"></script>
 <!-- Todo js -->
-<script type="text/javascript " src="../assets/pages/todo/todo.js "></script>
+<script type="text/javascript " src="../../assets/pages/todo/todo.js "></script>
 <!-- Custom js -->
-<script type="text/javascript" src="../assets/pages/dashboard/custom-dashboard.js"></script>
-<script type="text/javascript" src="../assets/js/script.js"></script>
-<script type="text/javascript " src="../assets/js/SmoothScroll.js"></script>
-<script src="../assets/js/pcoded.min.js"></script>
-<script src="../assets/js/demo-12.js"></script>
-<script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../../assets/pages/dashboard/custom-dashboard.js"></script>
+<script type="text/javascript" src="../../assets/js/script.js"></script>
+<script type="text/javascript " src="../../assets/js/SmoothScroll.js"></script>
+<script src="../../assets/js/pcoded.min.js"></script>
+<script src="../../assets/js/demo-12.js"></script>
+<script src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
 var $window = $(window);
 var nav = $('.fixed-button');

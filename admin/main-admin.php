@@ -1,7 +1,3 @@
-<?php
-include 'studentedit.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,18 +17,18 @@ include 'studentedit.php';
       <meta name="keywords" content=" Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
       <meta name="author" content="CodedThemes">
       <!-- Favicon icon -->
-      <link rel="icon" href="../assets/images/psu.png" type="image/x-icon">
+      <link rel="icon" href="../../assets/images/psu.png" type="image/x-icon">
       <!-- Google font-->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
       <!-- Required Fremwork -->
-      <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap/css/bootstrap.min.css">
       <!-- themify-icons line icon -->
-      <link rel="stylesheet" type="text/css" href="../assets/icon/themify-icons/themify-icons.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/icon/themify-icons/themify-icons.css">
       <!-- ico font -->
-      <link rel="stylesheet" type="text/css" href="../assets/icon/icofont/css/icofont.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/icon/icofont/css/icofont.css">
       <!-- Style.css -->
-      <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-      <link rel="stylesheet" type="text/css" href="../assets/css/jquery.mCustomScrollbar.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/jquery.mCustomScrollbar.css">
   </head>
 
   <body>
@@ -90,7 +86,7 @@ include 'studentedit.php';
                             <i class="ti-search"></i>
                         </a>
                         <a href="https://psu.palawan.edu.ph/">
-                            <img class="img-80 img-radius" class="img-fluid" src="../assets/images/psu.png" alt="Theme-Logo" />
+                            <img class="img-80 img-radius" class="img-fluid" src="../../assets/images/psu.png" alt="Theme-Logo" />
                         </a>    
                         <a class="mobile-options">
                             <i class="ti-more"></i>
@@ -122,7 +118,7 @@ include 'studentedit.php';
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">John Doe</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -132,7 +128,7 @@ include 'studentedit.php';
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../../assets/images/avatar-3.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Joseph William</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -142,7 +138,7 @@ include 'studentedit.php';
                                     </li>
                                     <li>
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="../assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="../../assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Sara Soudein</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -154,7 +150,7 @@ include 'studentedit.php';
                             </li>
                             <li class="user-profile header-notification">
                                 <a href="https://web.facebook.com/patpat.ubay">
-                                    <img src="../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
+                                    <img src="../../assets/images/image.png" class="img-radius" alt="User-Profile-Image">
                                     <span>Cyrus Reyes</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
@@ -198,7 +194,7 @@ include 'studentedit.php';
                             <div class="">
                                 <div class="main-menu-header">
                                 <a href="https://web.facebook.com/patpat.ubay">
-                                    <img class="img-80 img-radius" src="../assets/images/image.png" alt="User-Profile-Image"></a>
+                                    <img class="img-80 img-radius" src="../../assets/images/image.png" alt="User-Profile-Image"></a>
                                         <div class="user-details">
                                             <span>Gil Patrick Ayasib</span>
                                             <span id="more-details">Computer Science Student<i class="ti-angle-down"></i></span>
@@ -225,7 +221,7 @@ include 'studentedit.php';
                             <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Main</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="active">
-                                    <a href="index.html">
+                                    <a href="main-admin.php">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
@@ -239,16 +235,23 @@ include 'studentedit.php';
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="view-student.php">
+                                            <a href="student/view-student.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Informations</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" ">
+                                            <a href="subject/view-subject.php">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student Subjects</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
                                             <a href="view-grade.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">View Student Grades</span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Student Grades</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
@@ -313,24 +316,9 @@ include 'studentedit.php';
                         <div class="pcoded-inner-content">
                             <div class="main-body">
                                 <div class="page-wrapper">
+
                                     <div class="page-body">
-                                    <div class="card-title">Delete Program</div>
-              <div class="card-category">Page Subtitle</div>
-            </div>
-            
-            <div class="col-md-6">
-              <div class="card-body">
-                <form action="studentdelete.php" method="post">
-                  <p>Are you sure you want to delete?</p>
-                  
-                  <div class="form-group">
-                    <div class="col-md-12 col-sm-3">
-                      <button type="submit" class="btn btn-primary btn-rounded">Submit</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+                                    <h1>Welcome to Admin Dashboard!</h1>
                                     </div>
                                     </div>
 
